@@ -3,6 +3,6 @@ uvicorn
 pymongo
 passlib[bcrypt]
 python-jose
-email-validator  # If email functionalities are used
+email-validator
 slowapi
-python-multipart  # Add this line
+python-multipart
