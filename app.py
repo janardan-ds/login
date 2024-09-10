@@ -14,6 +14,7 @@ from slowapi import Limiter
 from slowapi.util import get_remote_address
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional
+import secrets
 
 
 app = FastAPI()
@@ -33,8 +34,10 @@ app.add_middleware(
     allow_headers=["*"],  # You can specify specific HTTP headers here
 )
 
+import os
+
 # MongoDB Configuration
-MONGO_URI = ""
+MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017/login")
 client = pymongo.MongoClient(MONGO_URI)
 db = client["login"]
 users_collection = db["users"]
@@ -197,7 +200,7 @@ async def signup(
         "company_name": company_name.lower(),
         "phone_number": phone_number,
         "token": access_token,
-        "signup_completed": False,
+        "signup_completed": True,
         "email_verified": False
     }
 
