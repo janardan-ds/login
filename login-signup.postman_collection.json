@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "03bcdbea-4d18-4616-a48a-fe3cdb00f9dc",
+		"name": "login-signup",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24461648"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "Harsh",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Nandwana",
+							"type": "text"
+						},
+						{
+							"key": "company_name",
+							"value": "Sdronsteroids",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "9993539995",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "harsh@sdronsteroids.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Harsh*2303",
+							"type": "text"
+						},
+						{
+							"key": "confirm_password",
+							"value": "Harsh*2303",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/creds/signup/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"creds",
+						"signup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "harsh@sdronsteroids.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Harsh*2303",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/creds/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"creds",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset-password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "harsh@sdronsteroids.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/creds/reset-password/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"creds",
+						"reset-password",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJoYXJzaEBzZHJvbnN0ZXJvaWRzLmNvbSIsImV4cCI6MTY5OTIxOTE0MH0.Sfmq8sC_MJ27569agLcCURlxgO7koAv5PRB9_uMazvY"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/creds/logout/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"creds",
+						"logout",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check-token",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJoYXJzaEBzZHJvbnN0ZXJvaWRzLmNvbSIsImV4cCI6MTY5OTIxOTE0MH0.Sfmq8sC_MJ27569agLcCURlxgO7koAv5PRB9_uMazvY"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/creds/check-token/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"creds",
+						"check-token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-details-1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJoYXJzaDFAc2Ryb25zdGVyb2lkcy5jb20iLCJleHAiOjE2OTkyNTIzMTh9.GlM_LXI2wxda6GeLiufVWmfE07S7-q4cmb_6SlrfEOY"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "company_name",
+							"value": "New Company Name",
+							"type": "text"
+						},
+						{
+							"key": "industry",
+							"value": "New Industry",
+							"type": "text"
+						},
+						{
+							"key": "website_url",
+							"value": "http://newcompanywebsite.com",
+							"type": "text"
+						},
+						{
+							"key": "linkedin_url",
+							"value": "http://linkedin.com/newcompany",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/creds/update-details/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"creds",
+						"update-details",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-details-2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJoYXJzaDFAc2Ryb25zdGVyb2lkcy5jb20iLCJleHAiOjE2OTkyNTIzMTh9.GlM_LXI2wxda6GeLiufVWmfE07S7-q4cmb_6SlrfEOY"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "company_description",
+							"value": "New Description",
+							"type": "text"
+						},
+						{
+							"key": "achievements",
+							"value": "New Achievements",
+							"type": "text"
+						},
+						{
+							"key": "problems",
+							"value": "New Problems",
+							"type": "text"
+						},
+						{
+							"key": "solutions",
+							"value": "New Solutions",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/creds/update-details-2/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"creds",
+						"update-details-2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-password",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJoYXJzaDFAc2Ryb25zdGVyb2lkcy5jb20iLCJleHAiOjE2OTkyNTIzMTh9.GlM_LXI2wxda6GeLiufVWmfE07S7-q4cmb_6SlrfEOY"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "old_password",
+							"value": "Harsh2303",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "Harsh2303",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/creds/update-password/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"creds",
+						"update-password",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
