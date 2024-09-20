@@ -16,12 +16,12 @@
 					"urlencoded": [
 						{
 							"key": "first_name",
-							"value": "Harsh",
+							"value": "Kishan",
 							"type": "text"
 						},
 						{
 							"key": "last_name",
-							"value": "Nandwana",
+							"value": "Pandey",
 							"type": "text"
 						},
 						{
@@ -36,17 +36,17 @@
 						},
 						{
 							"key": "email",
-							"value": "harsh@sdronsteroids.com",
+							"value": "Kishan@sdronsteroids.com",
 							"type": "text"
 						},
 						{
 							"key": "password",
-							"value": "Harsh*2303",
+							"value": "Kishan*2303",
 							"type": "text"
 						},
 						{
 							"key": "confirm_password",
-							"value": "Harsh*2303",
+							"value": "Kishan*2303",
 							"type": "text"
 						}
 					]
@@ -77,12 +77,12 @@
 					"urlencoded": [
 						{
 							"key": "email",
-							"value": "harsh@sdronsteroids.com",
+							"value": "Kishan@sdronsteroids.com",
 							"type": "text"
 						},
 						{
 							"key": "password",
-							"value": "Harsh*2303",
+							"value": "Kishan*2303",
 							"type": "text"
 						}
 					]
@@ -113,7 +113,7 @@
 					"urlencoded": [
 						{
 							"key": "email",
-							"value": "harsh@sdronsteroids.com",
+							"value": "Kishan@sdronsteroids.com",
 							"type": "text"
 						}
 					]
@@ -303,12 +303,12 @@
 					"formdata": [
 						{
 							"key": "old_password",
-							"value": "Harsh2303",
+							"value": "Kishan2303",
 							"type": "text"
 						},
 						{
 							"key": "new_password",
-							"value": "Harsh2303",
+							"value": "Kishan2303",
 							"type": "text"
 						}
 					]
