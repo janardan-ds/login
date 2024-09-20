@@ -87,8 +87,8 @@ def generate_random_password(length=12):
 
 
 # Email configuration
-EMAIL_ADDRESS = "test@test.com"
-EMAIL_PASSWORD = "pass"
+EMAIL_ADDRESS = "shelfjp@gmail.com"
+EMAIL_PASSWORD = "pnlh ryzn enyd qgks"
 
 
 
@@ -130,7 +130,7 @@ def send_email(to_email, subject, body):
 
 def send_password_reset_email(to_email, reset_token, new_password):
     subject = "Password Reset"
-    body = f"Your new password: {new_password}\n\nOR\n\nUse the following link to reset your password: http://example.com/reset?token={reset_token}"
+    body = f"Your new password: {new_password}\n\nOR\n\n Regards \n\n Team PPE Detection"
     send_email(to_email, subject, body)
 
 async def send_account_lock_email(to_email):
@@ -141,7 +141,7 @@ async def send_account_lock_email(to_email):
     If this was not you, please contact our support team immediately.
 
     Regards,
-    Your Team
+    PPE Detection
     """
     send_email(to_email, subject, body)
 
@@ -177,7 +177,7 @@ async def signup(
     email_domain = email.split("@")[-1].lower()
 
     # Check if the email domain is in the allowed business domains
-    not_allowed_mail_domains = ["gmail.com", "businesscorp.com"]
+    not_allowed_mail_domains = [ "businesscorp.com"]
     if email_domain in not_allowed_mail_domains:
         raise HTTPException(status_code=400, detail="Only business emails are allowed")
 
